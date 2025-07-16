@@ -5,7 +5,6 @@ export default function AboutScreen(){
         <View style={styles.container}>
             <Text style={styles.text}>About screen</Text>
         </View>
-
     );
 }
 
@@ -17,6 +16,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   text:{
-    color : '#272D2D',
+    color : 'black',
   },
 });
