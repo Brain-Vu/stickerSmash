@@ -1,5 +1,5 @@
-import { Image } from 'expo-image';
-import { ImageSourcePropType, StyleSheet } from 'react-native';
+import { Image } from "expo-image";
+import { ImageSourcePropType, StyleSheet } from "react-native";
 
 type Props = {
   defaultImage: ImageSourcePropType;
@@ -7,15 +7,15 @@ type Props = {
 };
 
 export default function ImageViewer({ defaultImage, selectedImage }: Props) {
-    const imageSource = selectedImage ? { uri : selectedImage } : defaultImage;
-  
-    return <Image source={imageSource} style={styles.image} />;
+  const imageSource = selectedImage ? { uri: selectedImage } : defaultImage;
+
+  return <Image source={imageSource} style={styles.image} />;
 }
 
 const styles = StyleSheet.create({
   image: {
-    width: '100%',
-    aspectRatio:  13 / 16,
+    width: "100%",
+    aspectRatio: 13 / 16,
     borderRadius: 18,
   },
 });
